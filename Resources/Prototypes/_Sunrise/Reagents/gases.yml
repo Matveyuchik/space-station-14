@@ -1,0 +1,45 @@
+- type: reagent
+  id: Propan
+  name: reagent-name-propan
+  desc: reagent-desc-propan
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: bitter
+  color: "#8b0000"
+  recognizable: false
+  boilingPoint: -42.1 # real data, no fictionality
+  meltingPoint: -189.7 # another real data
+  tileReactions:
+  - !type:FlammableTileReaction
+    temperatureMultiplier: 1.5
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 0.3
+        damage:
+          types:
+            Poison: 5
+    Gas:
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              1
+      - !type:PopupMessage
+        conditions:
+          - !type:ReagentThreshold
+            reagent: Propan
+            min: 0.2
+        type: Local
+        visualType: Small
+        messages: [ "propan-strong-smell" ]
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:FlammableReaction

@@ -1,0 +1,8 @@
+- type: gas
+  id: 9 
+  specificHeat: 46.8
+  heatCapacityRatio: 46.8 # real data
+  molarMass: 44.1 # another real data
+  color: 8B0000
+  reagent: Propan
+  pricePerMole: 0.9 # based on real prices
