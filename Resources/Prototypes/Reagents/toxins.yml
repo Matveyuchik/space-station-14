@@ -888,3 +888,20 @@
         delay: 2.5
         walkSpeedModifier: 0.5
         sprintSpeedModifier: 0.5
+
+- type: reagent
+  id: StilusWater # THOSE WHO KNOWS STILL WATER!!!!
+  name: reagent-name-stilus-water
+  group: Toxins
+  desc: reagent-desc-stilus-water
+  evaporationSpeed: 0
+  color: "#5C7DB8"
+  physicalDesc: reagent-physical-desc-cloudy
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 1.0
+      effects:
+        - !type:HealthChange
+          damage:
+            types:
+              Poison: 10

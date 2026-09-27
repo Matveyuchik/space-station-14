@@ -615,4 +615,12 @@
   products:
     TearGas: 3
 
-
+- type: reaction
+  id: StilusWaterReaction
+  reactants:
+    Water:
+      amount: 1
+    EZNutrient:
+      amount: 1
+  products:
+    StilusWater: 1
