@@ -18,3 +18,6 @@ reagent-desc-nitrous-oxide = You know how everything seems funnier when you're t
 
 reagent-name-frezon = frezon
 reagent-desc-frezon = A highly effective coolant.. and hallucinogenic.
+
+reagent-name-carbon-monoxide = carbon monoxide
+reagent-desc-carbon-monoxide = A colorless and odorless gas. Dangerous in small concentrations.

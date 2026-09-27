@@ -58,6 +58,16 @@
   effects:
   - !type:N2ODecompositionReaction {}
 
+- type: gasReaction
+  id: COCombustion
+  priority: -2
+  minimumTemperature: 373.149
+  minimumRequirements:
+    CarbonMonoxide: 0.01
+    Oxygen: 0.01
+  effects:
+  - !type:COCombustionReaction {}
+
 #- type: gasReaction
 #  id: WaterVaporPuddle
 #  priority: 1

@@ -17,7 +17,7 @@ public sealed partial class GeneratorExhaustGasComponent : Component
     /// The type of gas that will be emitted by the generator.
     /// </summary>
     [DataField("gasType"), ViewVariables(VVAccess.ReadWrite)]
-    public Gas GasType = Gas.CarbonDioxide;
+    public Gas GasType = Gas.CarbonMonoxide;
 
     /// <summary>
     /// The amount of moles of gas that should be produced when one unit of fuel is burned.

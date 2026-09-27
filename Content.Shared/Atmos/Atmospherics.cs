@@ -223,7 +223,7 @@ namespace Content.Shared.Atmos
         /// <summary>
         ///     Total number of gases. Increase this if you want to add more!
         /// </summary>
-        public const int TotalNumberOfGases = 9;
+        public const int TotalNumberOfGases = 10;
 
         /// <summary>
         ///     This is the actual length of the gases arrays in mixtures.
@@ -240,6 +240,7 @@ namespace Content.Shared.Atmos
         public const float FireSpreadRadiosityScale = 0.85f;
         public const float FirePlasmaEnergyReleased = 160e3f; // methane is 16 kJ/mol, plus plasma's spark of magic
         public const float FireGrowthRate = 40000f;
+        public const float FireCOEnergyReleased = 283e3f;
 
         public const float SuperSaturationThreshold = 96f;
         public const float SuperSaturationEnds = SuperSaturationThreshold / 3;
@@ -301,6 +302,19 @@ namespace Content.Shared.Atmos
         ///     Divisor for Ammonia Oxygen reaction so that it doesn't happen instantaneously.
         /// </summary>
         public const float AmmoniaOxygenReactionRate = 10f;
+
+        /// <summary>
+        ///     Minimal temperature of CO burning.
+        /// </summary>
+        public const float COMinimumBurnTemperature = 609f + T0C;
+
+        public const float COUpperTemperature = 5005f + T0C; // probably impossible in game but ok
+
+        public const float COBurnRateDelta = 2f;
+
+        public const float COBurnRateBase = 0.03f;
+
+        public const float COOxygenFullburn = 0.5f;
 
         /// <summary>
         ///     Determines at what pressure the ultra-high pressure red icon is displayed.
@@ -387,6 +401,7 @@ namespace Content.Shared.Atmos
         WaterVapor = 5,
         Ammonia = 6,
         NitrousOxide = 7,
-        Frezon = 8
+        Frezon = 8,
+        CarbonMonoxide = 9
     }
 }

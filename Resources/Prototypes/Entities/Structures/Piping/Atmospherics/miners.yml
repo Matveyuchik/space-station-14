@@ -147,3 +147,11 @@
   components:
     - type: GasMiner
       spawnGas: NitrousOxide
+
+- type: entity
+  name: CO gas miner
+  parent: GasMinerBase
+  id: GasMinerCarbonMonoxide
+  components:
+    - type: GasMiner
+      spawnGas: CarbonMonoxide

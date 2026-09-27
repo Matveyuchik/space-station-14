@@ -117,3 +117,14 @@
   color: '#3a758c'
   reagent: Frezon
   pricePerMole: 1
+
+- type: gas
+  id: CarbonMonoxide
+  name: gas-carbon-monoxide
+  abbreviation: gas-carbon-monoxide-abbreviation
+  molarHeatCapacity: 29.1
+  heatCapacityRatio: 1.4
+  molarMass: 28
+  color: "#101010"
+  reagent: CarbonMonoxide
+  pricePerMole: 0

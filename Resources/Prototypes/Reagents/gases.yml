@@ -393,3 +393,32 @@
         messages: [ "frezon-euphoric" ]
         probability: 0.1
         minScale: 1
+
+- type: reagent
+  id: CarbonMonoxide
+  name: reagent-name-carbon-monoxide
+  desc: reagent-desc-carbon-monoxide
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: bitter
+  color: "#4e4d4d"
+  meltingPoint: -205
+  boilingPoint: -191.5
+  metabolisms:
+    Bloodstream:
+      effects:
+        - !type:HealthChange
+          minScale: 0.1
+          ignoreResistances: true
+          damage:
+            types:
+              Poison: 2.0
+        - !type:Jitter
+    Respiration:
+      effects:
+        - !type:HealthChange
+          minScale: 0.01
+          ignoreResistances: true
+          damage:
+            types:
+              Asphyxiation: 0.15
+
