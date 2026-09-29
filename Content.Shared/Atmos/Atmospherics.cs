@@ -312,8 +312,6 @@ namespace Content.Shared.Atmos
 
         public const float COBurnRateDelta = 2f;
 
-        public const float COBurnRateBase = 0.03f;
-
         public const float COOxygenFullburn = 0.5f;
 
         /// <summary>
