@@ -149,6 +149,15 @@
             "name": "mask-water_vapor"
         },
         {
+            "name": "carbon-monoxide"
+        },
+        {
+            "name": "carbon-monoxide-1"
+        },
+        {
+            "name": "mask-carbon-monoxide"
+        },
+        {
             "name": "scrubber-connector"
         },
         {

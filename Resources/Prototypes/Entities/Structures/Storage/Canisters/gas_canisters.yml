@@ -610,7 +610,7 @@
   components:
   - type: Sprite
     layers:
-    - state: grey
+    - state: carbon-monoxide
     - state: paper
       visible: false
       map: [ "enum.PaperLabelVisuals.Layer" ]
@@ -618,11 +618,11 @@
       map: [ "enum.MaxPressureVisualLayers.BaseUnshaded" ]
       shader: unshaded
       visible: false
-    - state: mask-grey
+    - state: mask-carbon-monoxide
       map: [ "enum.MaxPressureVisualLayers.Base" ]
       visible: false
   - type: MaxPressureVisuals
-    integrityMask: mask-grey
+    integrityMask: mask-carbon-monoxide
   - type: GasCanister
     air:
       volume: 1500
@@ -799,4 +799,4 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: grey-1
+    state: carbon-monoxide-1
