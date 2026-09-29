@@ -47,7 +47,7 @@ public sealed partial class COCombustionReaction : IGasReactionEffect
 
             if (COBurnRate > Atmospherics.MinimumHeatCapacity)
             {
-                COBurnRate = MathF.Min(COBurnRate, initialOxygenMoles * 2f);
+                COBurnRate = MathF.Min(COBurnRate, MathF.Min(initialCOMoles, initialOxygenMoles * 2f));
                 mixture.SetMoles(Gas.CarbonMonoxide, initialCOMoles - COBurnRate);
                 mixture.SetMoles(Gas.Oxygen, initialOxygenMoles - (COBurnRate / 2f));
 
